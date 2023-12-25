@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>闭包 | Rr&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f589b1fd.css" as="style"><link rel="preload" href="/assets/js/app.75ff3624.js" as="script"><link rel="preload" href="/assets/js/2.5853c661.js" as="script"><link rel="preload" href="/assets/js/1.e5f7b0b7.js" as="script"><link rel="preload" href="/assets/js/69.e30aaaaf.js" as="script"><link rel="prefetch" href="/assets/js/10.4e15d136.js"><link rel="prefetch" href="/assets/js/11.940e6e21.js"><link rel="prefetch" href="/assets/js/12.0299837c.js"><link rel="prefetch" href="/assets/js/13.d7dfc8b9.js"><link rel="prefetch" href="/assets/js/14.c20ba1ca.js"><link rel="prefetch" href="/assets/js/15.611b4a46.js"><link rel="prefetch" href="/assets/js/16.7b6314c3.js"><link rel="prefetch" href="/assets/js/17.2de5fef7.js"><link rel="prefetch" href="/assets/js/18.8edb1f0c.js"><link rel="prefetch" href="/assets/js/19.e7a1d76a.js"><link rel="prefetch" href="/assets/js/20.b723be56.js"><link rel="prefetch" href="/assets/js/21.f0730c6b.js"><link rel="prefetch" href="/assets/js/22.0e61f47d.js"><link rel="prefetch" href="/assets/js/23.a626f674.js"><link rel="prefetch" href="/assets/js/24.d8d178e7.js"><link rel="prefetch" href="/assets/js/25.7470a3b0.js"><link rel="prefetch" href="/assets/js/26.ff5284c1.js"><link rel="prefetch" href="/assets/js/27.e390597c.js"><link rel="prefetch" href="/assets/js/28.f74f60d6.js"><link rel="prefetch" href="/assets/js/29.61a50bab.js"><link rel="prefetch" href="/assets/js/3.27b60221.js"><link rel="prefetch" href="/assets/js/30.ab8c6391.js"><link rel="prefetch" href="/assets/js/31.87bd35c8.js"><link rel="prefetch" href="/assets/js/32.3b055f60.js"><link rel="prefetch" href="/assets/js/33.311aff65.js"><link rel="prefetch" href="/assets/js/34.f7dcdc40.js"><link rel="prefetch" href="/assets/js/35.f0b7e821.js"><link rel="prefetch" href="/assets/js/36.320c4085.js"><link rel="prefetch" href="/assets/js/37.c01b6373.js"><link rel="prefetch" href="/assets/js/38.25a5fbc9.js"><link rel="prefetch" href="/assets/js/39.93cb9b79.js"><link rel="prefetch" href="/assets/js/4.a2dcb89c.js"><link rel="prefetch" href="/assets/js/40.f1c97cae.js"><link rel="prefetch" href="/assets/js/41.1ec5e5fa.js"><link rel="prefetch" href="/assets/js/42.413bbd4f.js"><link rel="prefetch" href="/assets/js/43.8f411bfa.js"><link rel="prefetch" href="/assets/js/44.5f35c83a.js"><link rel="prefetch" href="/assets/js/45.3be6f4a8.js"><link rel="prefetch" href="/assets/js/46.3eb2fd97.js"><link rel="prefetch" href="/assets/js/47.e93bc6ce.js"><link rel="prefetch" href="/assets/js/48.29733484.js"><link rel="prefetch" href="/assets/js/49.ab3ca286.js"><link rel="prefetch" href="/assets/js/5.c7463708.js"><link rel="prefetch" href="/assets/js/50.d57ff47b.js"><link rel="prefetch" href="/assets/js/51.11ff286d.js"><link rel="prefetch" href="/assets/js/52.19bf9b19.js"><link rel="prefetch" href="/assets/js/53.1e660857.js"><link rel="prefetch" href="/assets/js/54.07427bfe.js"><link rel="prefetch" href="/assets/js/55.40994f73.js"><link rel="prefetch" href="/assets/js/56.26a27c70.js"><link rel="prefetch" href="/assets/js/57.8dffd676.js"><link rel="prefetch" href="/assets/js/58.74e72182.js"><link rel="prefetch" href="/assets/js/59.5729badb.js"><link rel="prefetch" href="/assets/js/6.00ce6dd1.js"><link rel="prefetch" href="/assets/js/60.c37765b9.js"><link rel="prefetch" href="/assets/js/61.c628053b.js"><link rel="prefetch" href="/assets/js/62.6d625244.js"><link rel="prefetch" href="/assets/js/63.ec87e5a3.js"><link rel="prefetch" href="/assets/js/64.14db1735.js"><link rel="prefetch" href="/assets/js/65.791de530.js"><link rel="prefetch" href="/assets/js/66.d2058467.js"><link rel="prefetch" href="/assets/js/67.8c6167c8.js"><link rel="prefetch" href="/assets/js/68.3089736a.js"><link rel="prefetch" href="/assets/js/7.0b10c3db.js"><link rel="prefetch" href="/assets/js/70.9cb6ff0b.js"><link rel="prefetch" href="/assets/js/71.2c49c61f.js"><link rel="prefetch" href="/assets/js/72.907cbc95.js"><link rel="prefetch" href="/assets/js/73.2d30f938.js"><link rel="prefetch" href="/assets/js/74.3b989ff5.js"><link rel="prefetch" href="/assets/js/75.a4fdf052.js"><link rel="prefetch" href="/assets/js/76.ec0efeea.js"><link rel="prefetch" href="/assets/js/77.5ce63733.js"><link rel="prefetch" href="/assets/js/78.24ac62c3.js"><link rel="prefetch" href="/assets/js/79.e85f6d94.js"><link rel="prefetch" href="/assets/js/80.f1b1657d.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d8b3a8c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f589b1fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Rr's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/js/作用域和this/闭包.html" class="active sidebar-link">闭包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill/js/作用域和this/闭包.html#用法" class="sidebar-link">用法</a></li><li class="sidebar-sub-header"><a href="/skill/js/作用域和this/闭包.html#使用闭包的注意点" class="sidebar-link">使用闭包的注意点</a></li></ul></li><li><a href="/skill/js/作用域和this/原型链.html" class="sidebar-link">原型链</a></li><li><a href="/skill/js/作用域和this/JS执行上下文和执行栈.html" class="sidebar-link">JS执行上下文</a></li><li><a href="/skill/js/作用域和this/this详细解读.html" class="sidebar-link">this详细解读</a></li><li><a href="/skill/js/ES6/箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/skill/js/ES6/let和const.html" class="sidebar-link">let和const</a></li><li><a href="/skill/js/Event Loop/Event Loop.html" class="sidebar-link">Event Loop</a></li><li><a href="/skill/js/防抖和节流.html" class="sidebar-link">防抖和节流</a></li><li><a href="/skill/js/async/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/skill/js/页面加载.html" class="sidebar-link">页面加载</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h1> <ul><li><p>闭包是由函数以及声明该函数的词法环境组合而成的。该环境包含了这个闭包创建时作用域内的任何局部变量。</p></li> <li><p>闭包让你可以在一个内层函数中访问到其外层函数的作用域。</p></li></ul> <h2 id="用法"><a href="#用法" class="header-anchor">#</a> 用法</h2> <ul><li>读取函数内部的变量</li> <li>使变量的值始终保持在内存中</li> <li>用闭包模拟私有方法</li> <li>在循环中创建闭包</li></ul> <h2 id="使用闭包的注意点"><a href="#使用闭包的注意点" class="header-anchor">#</a> 使用闭包的注意点</h2> <ul><li>由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</li> <li>闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/skill/js/作用域和this/原型链.html">
+        原型链
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.75ff3624.js" defer></script><script src="/assets/js/2.5853c661.js" defer></script><script src="/assets/js/1.e5f7b0b7.js" defer></script><script src="/assets/js/69.e30aaaaf.js" defer></script>
+  </body>
+</html>
