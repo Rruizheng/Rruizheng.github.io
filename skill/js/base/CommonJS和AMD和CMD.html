@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CommonJS和AMD和CMD | Rr&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f589b1fd.css" as="style"><link rel="preload" href="/assets/js/app.63e6572e.js" as="script"><link rel="preload" href="/assets/js/2.5853c661.js" as="script"><link rel="preload" href="/assets/js/1.e5f7b0b7.js" as="script"><link rel="preload" href="/assets/js/70.14482414.js" as="script"><link rel="prefetch" href="/assets/js/10.4e15d136.js"><link rel="prefetch" href="/assets/js/11.36d5b72d.js"><link rel="prefetch" href="/assets/js/12.ce9d641c.js"><link rel="prefetch" href="/assets/js/13.f252ed01.js"><link rel="prefetch" href="/assets/js/14.0e4bb1db.js"><link rel="prefetch" href="/assets/js/15.611b4a46.js"><link rel="prefetch" href="/assets/js/16.7b6314c3.js"><link rel="prefetch" href="/assets/js/17.2de5fef7.js"><link rel="prefetch" href="/assets/js/18.8edb1f0c.js"><link rel="prefetch" href="/assets/js/19.0f686215.js"><link rel="prefetch" href="/assets/js/20.b723be56.js"><link rel="prefetch" href="/assets/js/21.f0730c6b.js"><link rel="prefetch" href="/assets/js/22.0e61f47d.js"><link rel="prefetch" href="/assets/js/23.a626f674.js"><link rel="prefetch" href="/assets/js/24.1eb131bc.js"><link rel="prefetch" href="/assets/js/25.a304b8c8.js"><link rel="prefetch" href="/assets/js/26.78ace1d6.js"><link rel="prefetch" href="/assets/js/27.e390597c.js"><link rel="prefetch" href="/assets/js/28.f74f60d6.js"><link rel="prefetch" href="/assets/js/29.2db0ceaa.js"><link rel="prefetch" href="/assets/js/3.27b60221.js"><link rel="prefetch" href="/assets/js/30.ab8c6391.js"><link rel="prefetch" href="/assets/js/31.fb08fe0c.js"><link rel="prefetch" href="/assets/js/32.88a2dec6.js"><link rel="prefetch" href="/assets/js/33.a215c628.js"><link rel="prefetch" href="/assets/js/34.f7dcdc40.js"><link rel="prefetch" href="/assets/js/35.2c79727f.js"><link rel="prefetch" href="/assets/js/36.320c4085.js"><link rel="prefetch" href="/assets/js/37.ef0e6a38.js"><link rel="prefetch" href="/assets/js/38.425ff37c.js"><link rel="prefetch" href="/assets/js/39.fb2d1ec3.js"><link rel="prefetch" href="/assets/js/4.a2dcb89c.js"><link rel="prefetch" href="/assets/js/40.73dd4d6c.js"><link rel="prefetch" href="/assets/js/41.a82aa888.js"><link rel="prefetch" href="/assets/js/42.1356c985.js"><link rel="prefetch" href="/assets/js/43.a2da7d19.js"><link rel="prefetch" href="/assets/js/44.4b390834.js"><link rel="prefetch" href="/assets/js/45.de05d68c.js"><link rel="prefetch" href="/assets/js/46.858bcc53.js"><link rel="prefetch" href="/assets/js/47.e9bdfdd4.js"><link rel="prefetch" href="/assets/js/48.fcd51222.js"><link rel="prefetch" href="/assets/js/49.c8f68d9c.js"><link rel="prefetch" href="/assets/js/5.c7463708.js"><link rel="prefetch" href="/assets/js/50.3a90bdf2.js"><link rel="prefetch" href="/assets/js/51.f0659f9f.js"><link rel="prefetch" href="/assets/js/52.d7b62681.js"><link rel="prefetch" href="/assets/js/53.3b108e72.js"><link rel="prefetch" href="/assets/js/54.5a3e5a59.js"><link rel="prefetch" href="/assets/js/55.7d06b7d6.js"><link rel="prefetch" href="/assets/js/56.65aa266d.js"><link rel="prefetch" href="/assets/js/57.e5e57a35.js"><link rel="prefetch" href="/assets/js/58.bfd523d9.js"><link rel="prefetch" href="/assets/js/59.a8d998eb.js"><link rel="prefetch" href="/assets/js/6.00ce6dd1.js"><link rel="prefetch" href="/assets/js/60.437165cf.js"><link rel="prefetch" href="/assets/js/61.f326ef58.js"><link rel="prefetch" href="/assets/js/62.38f3a4df.js"><link rel="prefetch" href="/assets/js/63.6bb8eadf.js"><link rel="prefetch" href="/assets/js/64.6665a418.js"><link rel="prefetch" href="/assets/js/65.95efdd65.js"><link rel="prefetch" href="/assets/js/66.813cbf1d.js"><link rel="prefetch" href="/assets/js/67.86b3baff.js"><link rel="prefetch" href="/assets/js/68.29b9fab5.js"><link rel="prefetch" href="/assets/js/69.aea273e4.js"><link rel="prefetch" href="/assets/js/7.0b10c3db.js"><link rel="prefetch" href="/assets/js/71.06593dc0.js"><link rel="prefetch" href="/assets/js/72.802f5fc2.js"><link rel="prefetch" href="/assets/js/73.1b02b75c.js"><link rel="prefetch" href="/assets/js/74.e5e1105e.js"><link rel="prefetch" href="/assets/js/75.a005acaf.js"><link rel="prefetch" href="/assets/js/76.d0a45c84.js"><link rel="prefetch" href="/assets/js/77.f58c2a23.js"><link rel="prefetch" href="/assets/js/78.cb51e0f7.js"><link rel="prefetch" href="/assets/js/79.4ce1a629.js"><link rel="prefetch" href="/assets/js/80.318927ea.js"><link rel="prefetch" href="/assets/js/81.b32882b3.js"><link rel="prefetch" href="/assets/js/82.da12ea28.js"><link rel="prefetch" href="/assets/js/83.d37bcd2b.js"><link rel="prefetch" href="/assets/js/84.c8296be2.js"><link rel="prefetch" href="/assets/js/85.21f72ba2.js"><link rel="prefetch" href="/assets/js/86.2ef9983c.js"><link rel="prefetch" href="/assets/js/87.a09638cb.js"><link rel="prefetch" href="/assets/js/88.df1154e8.js"><link rel="prefetch" href="/assets/js/89.faa49b1e.js"><link rel="prefetch" href="/assets/js/90.9d3b3002.js"><link rel="prefetch" href="/assets/js/91.c65648c6.js"><link rel="prefetch" href="/assets/js/92.421d4739.js"><link rel="prefetch" href="/assets/js/93.628bfb4c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d8b3a8c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f589b1fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Rr's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/js/作用域和this/闭包.html" class="sidebar-link">闭包</a></li><li><a href="/skill/js/作用域和this/原型链.html" class="sidebar-link">原型链</a></li><li><a href="/skill/js/作用域和this/JS执行上下文和执行栈.html" class="sidebar-link">JS执行上下文</a></li><li><a href="/skill/js/作用域和this/this详细解读.html" class="sidebar-link">this详细解读</a></li><li><a href="/skill/js/ES6/箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/skill/js/ES6/let和const.html" class="sidebar-link">let和const</a></li><li><a href="/skill/js/EventLoop/EventLoop.html" class="sidebar-link">Event Loop</a></li><li><a href="/skill/js/防抖和节流.html" class="sidebar-link">防抖和节流</a></li><li><a href="/skill/js/async/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/skill/js/页面加载.html" class="sidebar-link">页面加载</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/js/base/offsetWidth、clientWidth和scrollWidth.html" class="sidebar-link">offsetWidth、clientWidth和scrollWidth</a></li><li><a href="/skill/js/base/js类型转换.html" class="sidebar-link">JS类型转换</a></li><li><a href="/skill/js/base/CSRF和XSS.html" class="sidebar-link">CSRF和XSS</a></li><li><a href="/skill/js/base/CommonJS和AMD和CMD.html" class="active sidebar-link">CommonJS和AMD和CMD</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="commonjs和amd和cmd"><a href="#commonjs和amd和cmd" class="header-anchor">#</a> CommonJS和AMD和CMD</h1> <ul><li>CommonJS: 服务端模块化规范</li> <li>AMD: 浏览器侧，前端模块化规范，异步加载</li> <li>CMD: 浏览器侧，前端模块化规范，延迟执行，按需加载</li> <li>require.js: js模块化管理库，遵循AMD规范</li> <li>ES6 模块系统: ES6 标准引入的一种模块系统语法</li></ul> <h3 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h3> <p>应用案例：nodejs、webpack、npm<br>
+形式：require、exports、module</p> <p>require()用来引入外部模块；exports对象用于导出当前模块的方法或变量，唯一的导出口；module对象就代表模块本身。</p> <p>NPM了。NPM作为Node的包管理器，不是为了帮助Node解决依赖包的安装问题嘛，那它肯定也要遵循CommonJS规范啦，它遵循包规范（还是理论）的。</p> <p>而且最好两者能够兼容，一个模块不用修改，在服务器和浏览器都可以运行。但是，由于一个重大的局限，使得CommonJS规范不适用于浏览器环境。</p> <p>浏览器不兼容CommonJS的根本原因，在于缺少四个Node.js环境的变量。</p> <p>module
+exports
+require
+global</p> <hr> <h3 id="amd"><a href="#amd" class="header-anchor">#</a> AMD</h3> <p>应用： requirejs、curljs</p> <p>写法：require([module], callback) 、define</p> <p>因此，浏览器端的模块，不能采用&quot;同步加载&quot;（synchronous），只能采用&quot;异步加载&quot;（asynchronous）。这就是AMD规范诞生的背景。</p> <p>CommonJS是主要为了JS在后端的表现制定的，他是不适合前端的，AMD(异步模块定义)出现了，它就主要为前端JS的表现制定规范。</p> <p>AMD是&quot;Asynchronous Module Definition&quot;的缩写，意思就是&quot;异步模块定义&quot;。它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p> <p>AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>　　require([module], callback);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>第一个参数[module]，是一个数组，里面的成员就是要加载的模块；第二个参数callback，则是加载成功之后的回调函数。如果将前面的代码改写成AMD形式，就是下面这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>　　require(['math'], function (math) {
+
+　　　　math.add(2, 3);
+
+　　});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="cmd"><a href="#cmd" class="header-anchor">#</a> CMD</h3> <p>CMD（Common Module Definition）是一种 JavaScript 模块规范，它类似于 CommonJS 规范，用于在浏览器环境中实现模块化开发。</p> <p>CMD 是由国内前端开发者玉伯提出的，主要用于解决前端开发中的模块化问题。与 CommonJS 规范不同，CMD 的特点是延迟执行和按需加载。</p> <p>在浏览器中使用 CMD 规范的模块时，需要使用特定的加载器（如 SeaJS 或 RequireJS）来加载和解析模块。</p> <p>CMD 规范相对于 AMD 规范和 ES6 模块语法来说，使用较少，因为在前端开发中，通常更倾向于使用 AMD 规范或 ES6 模块语法来实现模块化。</p> <p>应用： seajs</p> <h3 id="require-js"><a href="#require-js" class="header-anchor">#</a> Require.js</h3> <ul><li>阅读<a href="https://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank" rel="noopener noreferrer">Require.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>加载非规范的模块
+Require.js 是一个用于管理模块依赖的 JavaScript 库，它遵循 AMD（Asynchronous Module Definition）规范。AMD 规范定义了一种异步加载模块的方式，并且支持非规范的模块加载。</li></ul> <p>在 Require.js 中，非规范的模块通常是指那些没有按照 AMD 或 CommonJS 规范编写的模块，也就是没有使用 <code>define</code> 或 <code>exports</code> 这样的模块定义语法的模块。</p> <p>Require.js 提供了几种方式来加载非规范的模块：</p> <ol><li>使用 <code>shim</code> 配置：你可以通过 <code>shim</code> 配置来告诉 Require.js 如何加载非规范的模块。在 <code>shim</code> 中，你可以指定非规范模块的依赖关系和导出变量。例如：</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>require<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">shim</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'non-amd-module'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">deps</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'dependency1'</span><span class="token punctuation">,</span> <span class="token string">'dependency2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">exports</span><span class="token operator">:</span> <span class="token string">'exportedVariable'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>这样，当 Require.js 加载非规范模块时，它会先加载指定的依赖项，然后将导出的变量作为模块的返回值。</p> <ol start="2"><li>使用 <code>init</code> 方法：如果非规范的模块没有导出变量，你可以使用 <code>init</code> 方法来在模块加载完成后执行一些初始化操作。</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'non-amd-module'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 非规范模块加载完成后执行的初始化操作</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这样，当 Require.js 加载非规范模块完成后，会执行回调函数中的代码。</p> <p>需要注意的是，尽管 Require.js 提供了加载非规范模块的方式，但最好还是遵循 AMD 或 CommonJS 规范编写模块，以便更好地利用 Require.js 的模块管理功能。</p> <h3 id="es6-模块系统"><a href="#es6-模块系统" class="header-anchor">#</a> ES6 模块系统</h3> <p>ES6 模块语法（也称为 ES2015 模块）是 ECMAScript 6 标准引入的一种模块系统语法，具有以下特点：</p> <ol><li><p>显式导入和导出：使用 <code>import</code> 关键字来显式地导入模块中的成员，使用 <code>export</code> 关键字来显式地导出模块中的成员。</p></li> <li><p>单一默认导出：可以使用 <code>export default</code> 语法来导出一个默认的模块成员，一个模块只能有一个默认导出。</p></li> <li><p>命名导出：可以使用 <code>export</code> 关键字来命名导出一个或多个模块成员，每个成员都有一个名字。</p></li> <li><p>静态导入和导出：ES6 模块语法在编译时进行静态分析，因此导入和导出的模块成员是静态确定的，这意味着它们不能在运行时动态改变。</p></li> <li><p>编译时导入和导出：ES6 模块语法在编译时处理导入和导出，因此可以在构建过程中进行静态优化，如打包、压缩等。</p></li> <li><p>循环依赖处理：ES6 模块语法可以处理循环依赖，当出现循环依赖时，可以正确地解决模块的加载顺序。</p></li> <li><p>静态作用域：ES6 模块语法使用静态作用域，模块内部的变量和函数只在模块内部可见，不会污染全局作用域。</p></li></ol> <p>ES6 模块语法的引入使得 JavaScript 拥有了一种标准的、强大的模块系统，有助于提升代码的可维护性、可重用性和可扩展性。它已成为现代 JavaScript 开发中的常用特性，并被广泛应用于前端框架（如 React、Vue）和构建工具（如 Webpack、Rollup）中。</p> <p>在 React 前端开发中，我们是通过构建工具和 Babel 将使用 ES6 模块语法编写的代码转换为浏览器可执行的JavaScript 语法，以确保应用能够在浏览器中运行。而不是直接将其编译为 CommonJS 或 AMD 规范的语法。</p> <hr> <p>参考
+<a href="https://www.cnblogs.com/chenguangliang/p/5856701.html" target="_blank" rel="noopener noreferrer">js模块化编程之彻底弄懂CommonJS和AMD/CMD！<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/js/base/CSRF和XSS.html" class="prev">
+        CSRF和XSS
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.63e6572e.js" defer></script><script src="/assets/js/2.5853c661.js" defer></script><script src="/assets/js/1.e5f7b0b7.js" defer></script><script src="/assets/js/70.14482414.js" defer></script>
+  </body>
+</html>

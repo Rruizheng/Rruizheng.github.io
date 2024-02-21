@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Babel插件 | Rr&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f589b1fd.css" as="style"><link rel="preload" href="/assets/js/app.63e6572e.js" as="script"><link rel="preload" href="/assets/js/2.5853c661.js" as="script"><link rel="preload" href="/assets/js/1.e5f7b0b7.js" as="script"><link rel="preload" href="/assets/js/31.fb08fe0c.js" as="script"><link rel="prefetch" href="/assets/js/10.4e15d136.js"><link rel="prefetch" href="/assets/js/11.36d5b72d.js"><link rel="prefetch" href="/assets/js/12.ce9d641c.js"><link rel="prefetch" href="/assets/js/13.f252ed01.js"><link rel="prefetch" href="/assets/js/14.0e4bb1db.js"><link rel="prefetch" href="/assets/js/15.611b4a46.js"><link rel="prefetch" href="/assets/js/16.7b6314c3.js"><link rel="prefetch" href="/assets/js/17.2de5fef7.js"><link rel="prefetch" href="/assets/js/18.8edb1f0c.js"><link rel="prefetch" href="/assets/js/19.0f686215.js"><link rel="prefetch" href="/assets/js/20.b723be56.js"><link rel="prefetch" href="/assets/js/21.f0730c6b.js"><link rel="prefetch" href="/assets/js/22.0e61f47d.js"><link rel="prefetch" href="/assets/js/23.a626f674.js"><link rel="prefetch" href="/assets/js/24.1eb131bc.js"><link rel="prefetch" href="/assets/js/25.a304b8c8.js"><link rel="prefetch" href="/assets/js/26.78ace1d6.js"><link rel="prefetch" href="/assets/js/27.e390597c.js"><link rel="prefetch" href="/assets/js/28.f74f60d6.js"><link rel="prefetch" href="/assets/js/29.2db0ceaa.js"><link rel="prefetch" href="/assets/js/3.27b60221.js"><link rel="prefetch" href="/assets/js/30.ab8c6391.js"><link rel="prefetch" href="/assets/js/32.88a2dec6.js"><link rel="prefetch" href="/assets/js/33.a215c628.js"><link rel="prefetch" href="/assets/js/34.f7dcdc40.js"><link rel="prefetch" href="/assets/js/35.2c79727f.js"><link rel="prefetch" href="/assets/js/36.320c4085.js"><link rel="prefetch" href="/assets/js/37.ef0e6a38.js"><link rel="prefetch" href="/assets/js/38.425ff37c.js"><link rel="prefetch" href="/assets/js/39.fb2d1ec3.js"><link rel="prefetch" href="/assets/js/4.a2dcb89c.js"><link rel="prefetch" href="/assets/js/40.73dd4d6c.js"><link rel="prefetch" href="/assets/js/41.a82aa888.js"><link rel="prefetch" href="/assets/js/42.1356c985.js"><link rel="prefetch" href="/assets/js/43.a2da7d19.js"><link rel="prefetch" href="/assets/js/44.4b390834.js"><link rel="prefetch" href="/assets/js/45.de05d68c.js"><link rel="prefetch" href="/assets/js/46.858bcc53.js"><link rel="prefetch" href="/assets/js/47.e9bdfdd4.js"><link rel="prefetch" href="/assets/js/48.fcd51222.js"><link rel="prefetch" href="/assets/js/49.c8f68d9c.js"><link rel="prefetch" href="/assets/js/5.c7463708.js"><link rel="prefetch" href="/assets/js/50.3a90bdf2.js"><link rel="prefetch" href="/assets/js/51.f0659f9f.js"><link rel="prefetch" href="/assets/js/52.d7b62681.js"><link rel="prefetch" href="/assets/js/53.3b108e72.js"><link rel="prefetch" href="/assets/js/54.5a3e5a59.js"><link rel="prefetch" href="/assets/js/55.7d06b7d6.js"><link rel="prefetch" href="/assets/js/56.65aa266d.js"><link rel="prefetch" href="/assets/js/57.e5e57a35.js"><link rel="prefetch" href="/assets/js/58.bfd523d9.js"><link rel="prefetch" href="/assets/js/59.a8d998eb.js"><link rel="prefetch" href="/assets/js/6.00ce6dd1.js"><link rel="prefetch" href="/assets/js/60.437165cf.js"><link rel="prefetch" href="/assets/js/61.f326ef58.js"><link rel="prefetch" href="/assets/js/62.38f3a4df.js"><link rel="prefetch" href="/assets/js/63.6bb8eadf.js"><link rel="prefetch" href="/assets/js/64.6665a418.js"><link rel="prefetch" href="/assets/js/65.95efdd65.js"><link rel="prefetch" href="/assets/js/66.813cbf1d.js"><link rel="prefetch" href="/assets/js/67.86b3baff.js"><link rel="prefetch" href="/assets/js/68.29b9fab5.js"><link rel="prefetch" href="/assets/js/69.aea273e4.js"><link rel="prefetch" href="/assets/js/7.0b10c3db.js"><link rel="prefetch" href="/assets/js/70.14482414.js"><link rel="prefetch" href="/assets/js/71.06593dc0.js"><link rel="prefetch" href="/assets/js/72.802f5fc2.js"><link rel="prefetch" href="/assets/js/73.1b02b75c.js"><link rel="prefetch" href="/assets/js/74.e5e1105e.js"><link rel="prefetch" href="/assets/js/75.a005acaf.js"><link rel="prefetch" href="/assets/js/76.d0a45c84.js"><link rel="prefetch" href="/assets/js/77.f58c2a23.js"><link rel="prefetch" href="/assets/js/78.cb51e0f7.js"><link rel="prefetch" href="/assets/js/79.4ce1a629.js"><link rel="prefetch" href="/assets/js/80.318927ea.js"><link rel="prefetch" href="/assets/js/81.b32882b3.js"><link rel="prefetch" href="/assets/js/82.da12ea28.js"><link rel="prefetch" href="/assets/js/83.d37bcd2b.js"><link rel="prefetch" href="/assets/js/84.c8296be2.js"><link rel="prefetch" href="/assets/js/85.21f72ba2.js"><link rel="prefetch" href="/assets/js/86.2ef9983c.js"><link rel="prefetch" href="/assets/js/87.a09638cb.js"><link rel="prefetch" href="/assets/js/88.df1154e8.js"><link rel="prefetch" href="/assets/js/89.faa49b1e.js"><link rel="prefetch" href="/assets/js/90.9d3b3002.js"><link rel="prefetch" href="/assets/js/91.c65648c6.js"><link rel="prefetch" href="/assets/js/92.421d4739.js"><link rel="prefetch" href="/assets/js/93.628bfb4c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d8b3a8c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f589b1fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Rr's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link router-link-active">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link router-link-active">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>#Babel</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/project/build/babel/ast.html" class="sidebar-link">AST</a></li><li><a href="/project/build/babel/base.html" class="sidebar-link">Babel基础</a></li><li><a href="/project/build/babel/preset.html" class="sidebar-link">Babel预设</a></li><li><a href="/project/build/babel/plugin.html" aria-current="page" class="active sidebar-link">Babel插件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#babel插件机制" class="sidebar-link">Babel插件机制</a></li><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#ast解析流程" class="sidebar-link">AST解析流程</a></li><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#概念" class="sidebar-link">概念</a></li><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#核心库" class="sidebar-link">核心库</a></li><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#编写一个插件" class="sidebar-link">编写一个插件</a></li><li class="sidebar-sub-header"><a href="/project/build/babel/plugin.html#使用插件" class="sidebar-link">使用插件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="babel插件"><a href="#babel插件" class="header-anchor">#</a> Babel插件</h1> <h2 id="babel插件机制"><a href="#babel插件机制" class="header-anchor">#</a> Babel插件机制</h2> <p>插件通常是一些单一的功能模块，它们会在转换代码时对 AST（抽象语法树）进行操作，从而实现代码的转换。</p> <p>Babel 可以很容易地通过插件机制进行扩展和自定义。</p> <h2 id="ast解析流程"><a href="#ast解析流程" class="header-anchor">#</a> AST解析流程</h2> <ul><li>词法分析：源码经过词法分析（分词）产生token序列，可看作一个扁平的语法片段数组</li> <li>语法分析：对token序列进行语法分析，这个阶段会使用token中的信息把它们转换成一个 AST 的表述结构</li> <li>转换：转换步骤接收 AST 并对其进行遍历，在此过程中对节点进行添加、更新及移除等操作。 这是 Babel 或是其他编译器中最复杂的过程 同时也是插件将要介入工作的部分。</li> <li>生成AST：深度优先遍历整个 AST，然后构建可以表示转换后代码的字符串</li></ul> <h2 id="概念"><a href="#概念" class="header-anchor">#</a> 概念</h2> <h3 id="visitors-访问者"><a href="#visitors-访问者" class="header-anchor">#</a> Visitors（访问者）</h3> <ul><li>访问节点：进入一个节点，其实就是在访问节点。</li> <li>访问者是一个用于 AST 遍历的跨语言的模式。 简单的说它们就是一个对象，定义了用于在一个树状结构中获取具体节点的方法。</li> <li>在遍历节点的过程中，每个节点都会有<code>进入和退出</code>两次访问机会</li> <li>示例: 把它用于遍历中时，每当在树中遇见一个 Identifier 的时候会调用 Identifier() 方法。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Identifier() { ... } 是 Identifier: { enter() { ... } } 的简写形式。.
+const MyVisitor = {
+  Identifier() {
+    console.log(&quot;Called!&quot;);
+  }
+};
+
+const MyVisitor = {
+  Identifier: {
+    enter() {
+      console.log(&quot;Entered!&quot;);
+    },
+    exit() {
+      console.log(&quot;Exited!&quot;);
+    }
+  }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="paths-路径"><a href="#paths-路径" class="header-anchor">#</a> Paths（路径）</h3> <ul><li>Path: 表示两个节点之间连接的对象。</li> <li>路径对象包含添加、更新、移动和删除节点有关的其他很多方法</li> <li>路径是一个节点在树中的位置以及关于该节点各种信息的响应式 Reactive 表示</li> <li>示例：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  type: &quot;FunctionDeclaration&quot;,
+  id: {
+    type: &quot;Identifier&quot;,
+    name: &quot;square&quot;
+  },
+  ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>将子节点 Identifier 表示为一个路径（Path）的话，看起来是这样的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;parent&quot;: {
+    &quot;type&quot;: &quot;FunctionDeclaration&quot;,
+    &quot;id&quot;: {...},
+    ....
+  },
+  &quot;node&quot;: {
+    &quot;type&quot;: &quot;Identifier&quot;,
+    &quot;name&quot;: &quot;square&quot;
+  }
+  ... // 该路径的其他数据
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="paths-in-visitors-存在于访问者中的路径"><a href="#paths-in-visitors-存在于访问者中的路径" class="header-anchor">#</a> Paths in Visitors（存在于访问者中的路径）</h3> <ul><li>当你有一个 Identifier() 成员方法的访问者时，你实际上是在访问路径而非节点。</li> <li>通过这种方式，你操作的就是节点的响应式表示（译注：即路径）而非节点本身。</li></ul> <h2 id="核心库"><a href="#核心库" class="header-anchor">#</a> 核心库</h2> <h3 id="babel-core"><a href="#babel-core" class="header-anchor">#</a> @babel-core</h3> <p>包含 @babel/parser, @babel/traverse, @babel/generator，其中 parser 负责将源代码解析成 ast，traverse 向外提供遍历 ast 节点的能力，generator 负责根据变换后的 ast 生成目标代码。</p> <h3 id="babel-traverse"><a href="#babel-traverse" class="header-anchor">#</a> @babel/traverse</h3> <p>Babel Traverse（遍历）模块维护了整棵树的状态，并且负责替换、移除和添加节点。</p> <h3 id="babel-types"><a href="#babel-types" class="header-anchor">#</a> @babel/types</h3> <p>Babel Types模块是一个用于 AST 节点的 Lodash 式工具库，它包含了构造、验证以及变换 AST 节点的方法。</p> <h3 id="babel-generator"><a href="#babel-generator" class="header-anchor">#</a> @babel/generator</h3> <p>Babel Generator模块是 Babel 的代码生成器，它读取AST并将其转换为代码和源码映射（sourcemaps）</p> <h3 id="babel-template"><a href="#babel-template" class="header-anchor">#</a> @babel/template</h3> <p>babel-template 是另一个虽然很小但却非常有用的模块。 它能让你编写字符串形式且带有占位符的代码来代替手动编码， 尤其是生成的大规模AST的时候。</p> <h2 id="编写一个插件"><a href="#编写一个插件" class="header-anchor">#</a> 编写一个插件</h2> <ul><li>插件基础模板</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default function({ types: t }) {
+  return {
+    visitor: {
+      // visitor contents
+    }
+  };
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>函数会接收当前的babel作为入参，由于会经常用到babel.types，所以可以通过对象解构来获取types({types:t}).在返回的对象中</li> <li>visitor是这个插件的主要访问者，visitor里面有很多函数，每个函数都会接收两个参数path,state。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default function({ types: t }) {
+  return {
+    visitor: {
+      Identifier(path, state) {},
+      ASTNodeTypeHere(path, state) {}
+    }
+  };
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="插件示例"><a href="#插件示例" class="header-anchor">#</a> 插件示例</h3> <h4 id="栗子1"><a href="#栗子1" class="header-anchor">#</a> 栗子1</h4> <ul><li>将所有遇到的变量名都改为&quot;Hello World!&quot;</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = function({ types: t }) {
+  return {
+    visitor: {
+      Identifier(path) {
+        path.node.name = &quot;Hello World!&quot;;
+      }
+    }
+  };
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="栗子2"><a href="#栗子2" class="header-anchor">#</a> 栗子2</h4> <ul><li>去掉代码中的cosole
+首先查看语句console.log的AST解析结果</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log('');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/result1.dc6a937b.png" alt="image.png"></p> <ul><li>console的最近父节点是MemberExpression</li> <li>在父节点中查找console语句</li> <li>console.log属于ExpressionStatement，找到这句话的节点</li> <li>删除这句话</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = function ({ types: t }) {
+  return {
+    visitor: {
+      // console.log的最近父节点是MemberExpression
+      MemberExpression(path) { 
+        // 查找console语句
+        if (!path.get('object').isIdentifier({ name: 'console' })) return;
+        // console.log属于ExpressionStatement，找到这句话的节点
+        const parent = path.findParent((path) =&gt; path.isExpressionStatement());
+        // 删除这句话
+        parent.remove();
+      }
+    }
+  };
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="栗子3"><a href="#栗子3" class="header-anchor">#</a> 栗子3</h4> <ul><li><a href="https://github.com/babel/babel/tree/main/packages/babel-plugin-transform-arrow-functions" target="_blank" rel="noopener noreferrer">@babel/plugin-transform-arrow-functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 源码</li> <li>主要使用了path自带的isArrowFunctionExpression和arrowFunctionToExpression方法</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { declare } from &quot;@babel/helper-plugin-utils&quot;;
+
+export interface Options {
+  spec?: boolean;
+}
+
+export default declare((api, options: Options) =&gt; {
+  api.assertVersion(7);
+
+  const noNewArrows = api.assumption(&quot;noNewArrows&quot;) ?? !options.spec;
+
+  return {
+    name: &quot;transform-arrow-functions&quot;,
+
+    visitor: {
+      ArrowFunctionExpression(path) {
+        // In some conversion cases, it may have already been converted to a function while this callback
+        // was queued up.
+        if (!path.isArrowFunctionExpression()) return;
+
+        if (process.env.BABEL_8_BREAKING) {
+          path.arrowFunctionToExpression({
+            // While other utils may be fine inserting other arrows to make more transforms possible,
+            // the arrow transform itself absolutely cannot insert new arrow functions.
+            allowInsertArrow: false,
+            noNewArrows,
+          });
+        } else {
+          path.arrowFunctionToExpression({
+            allowInsertArrow: false,
+            noNewArrows,
+
+            // This is only needed for backward compat with @babel/traverse &lt;7.13.0
+            // @ts-ignore(Babel 7 vs Babel 8) Removed in Babel 8
+            specCompliant: !noNewArrows,
+          });
+        }
+      },
+    },
+  };
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h2 id="使用插件"><a href="#使用插件" class="header-anchor">#</a> 使用插件</h2> <p>使用Babel插件的基本步骤：</p> <ul><li>安装插件：使用npm或yarn安装需要的插件。</li> <li>配置插件：在项目根目录下创建babel.config.js或者.babelrc文件，并进行相关插件的配置。</li> <li>运行Babel：使用Babel将代码转换为目标版本。</li></ul> <p>例如，实现以下代码的转换：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const a = () =&gt; {
+  console.log(&quot;Hello World!&quot;);
+};
+
+export default a;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>可以通过添加一个 <a href="https://github.com/babel/babel/tree/main/packages/babel-plugin-transform-arrow-functions" target="_blank" rel="noopener noreferrer">@babel/plugin-transform-arrow-functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 插件来将箭头函数转化为普通函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ npm install --save-dev @babel/plugin-transform-arrow-functions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在.babelrc配置文件中添加以下内容：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;plugins&quot;: [
+    &quot;@babel/plugin-transform-arrow-functions&quot;
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>然后运行 Babel 即可将代码转换为兼容旧版浏览器的代码。</p> <h3 id="插件顺序"><a href="#插件顺序" class="header-anchor">#</a> 插件顺序</h3> <p>如果两个转换插件都将处理“程序（Program）”的某个代码片段，则将根据转换插件或 preset 的排列顺序依次执行。</p> <ul><li>插件在 Presets 前运行。</li> <li>插件顺序从前往后排列。</li> <li>Preset 顺序是颠倒的（从后往前）。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>babel.config.json
+{
+  &quot;plugins&quot;: [&quot;A&quot;, &quot;B&quot;]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>先执行 A，再执行 B。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;presets&quot;: [&quot;A&quot;, &quot;B&quot;]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>先执行 B，再执行 A。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/project/build/babel/preset.html" class="prev">
+        Babel预设
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.63e6572e.js" defer></script><script src="/assets/js/2.5853c661.js" defer></script><script src="/assets/js/1.e5f7b0b7.js" defer></script><script src="/assets/js/31.fb08fe0c.js" defer></script>
+  </body>
+</html>

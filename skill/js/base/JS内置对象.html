@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS内置对象 | Rr&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f589b1fd.css" as="style"><link rel="preload" href="/assets/js/app.63e6572e.js" as="script"><link rel="preload" href="/assets/js/2.5853c661.js" as="script"><link rel="preload" href="/assets/js/1.e5f7b0b7.js" as="script"><link rel="preload" href="/assets/js/71.06593dc0.js" as="script"><link rel="prefetch" href="/assets/js/10.4e15d136.js"><link rel="prefetch" href="/assets/js/11.36d5b72d.js"><link rel="prefetch" href="/assets/js/12.ce9d641c.js"><link rel="prefetch" href="/assets/js/13.f252ed01.js"><link rel="prefetch" href="/assets/js/14.0e4bb1db.js"><link rel="prefetch" href="/assets/js/15.611b4a46.js"><link rel="prefetch" href="/assets/js/16.7b6314c3.js"><link rel="prefetch" href="/assets/js/17.2de5fef7.js"><link rel="prefetch" href="/assets/js/18.8edb1f0c.js"><link rel="prefetch" href="/assets/js/19.0f686215.js"><link rel="prefetch" href="/assets/js/20.b723be56.js"><link rel="prefetch" href="/assets/js/21.f0730c6b.js"><link rel="prefetch" href="/assets/js/22.0e61f47d.js"><link rel="prefetch" href="/assets/js/23.a626f674.js"><link rel="prefetch" href="/assets/js/24.1eb131bc.js"><link rel="prefetch" href="/assets/js/25.a304b8c8.js"><link rel="prefetch" href="/assets/js/26.78ace1d6.js"><link rel="prefetch" href="/assets/js/27.e390597c.js"><link rel="prefetch" href="/assets/js/28.f74f60d6.js"><link rel="prefetch" href="/assets/js/29.2db0ceaa.js"><link rel="prefetch" href="/assets/js/3.27b60221.js"><link rel="prefetch" href="/assets/js/30.ab8c6391.js"><link rel="prefetch" href="/assets/js/31.fb08fe0c.js"><link rel="prefetch" href="/assets/js/32.88a2dec6.js"><link rel="prefetch" href="/assets/js/33.a215c628.js"><link rel="prefetch" href="/assets/js/34.f7dcdc40.js"><link rel="prefetch" href="/assets/js/35.2c79727f.js"><link rel="prefetch" href="/assets/js/36.320c4085.js"><link rel="prefetch" href="/assets/js/37.ef0e6a38.js"><link rel="prefetch" href="/assets/js/38.425ff37c.js"><link rel="prefetch" href="/assets/js/39.fb2d1ec3.js"><link rel="prefetch" href="/assets/js/4.a2dcb89c.js"><link rel="prefetch" href="/assets/js/40.73dd4d6c.js"><link rel="prefetch" href="/assets/js/41.a82aa888.js"><link rel="prefetch" href="/assets/js/42.1356c985.js"><link rel="prefetch" href="/assets/js/43.a2da7d19.js"><link rel="prefetch" href="/assets/js/44.4b390834.js"><link rel="prefetch" href="/assets/js/45.de05d68c.js"><link rel="prefetch" href="/assets/js/46.858bcc53.js"><link rel="prefetch" href="/assets/js/47.e9bdfdd4.js"><link rel="prefetch" href="/assets/js/48.fcd51222.js"><link rel="prefetch" href="/assets/js/49.c8f68d9c.js"><link rel="prefetch" href="/assets/js/5.c7463708.js"><link rel="prefetch" href="/assets/js/50.3a90bdf2.js"><link rel="prefetch" href="/assets/js/51.f0659f9f.js"><link rel="prefetch" href="/assets/js/52.d7b62681.js"><link rel="prefetch" href="/assets/js/53.3b108e72.js"><link rel="prefetch" href="/assets/js/54.5a3e5a59.js"><link rel="prefetch" href="/assets/js/55.7d06b7d6.js"><link rel="prefetch" href="/assets/js/56.65aa266d.js"><link rel="prefetch" href="/assets/js/57.e5e57a35.js"><link rel="prefetch" href="/assets/js/58.bfd523d9.js"><link rel="prefetch" href="/assets/js/59.a8d998eb.js"><link rel="prefetch" href="/assets/js/6.00ce6dd1.js"><link rel="prefetch" href="/assets/js/60.437165cf.js"><link rel="prefetch" href="/assets/js/61.f326ef58.js"><link rel="prefetch" href="/assets/js/62.38f3a4df.js"><link rel="prefetch" href="/assets/js/63.6bb8eadf.js"><link rel="prefetch" href="/assets/js/64.6665a418.js"><link rel="prefetch" href="/assets/js/65.95efdd65.js"><link rel="prefetch" href="/assets/js/66.813cbf1d.js"><link rel="prefetch" href="/assets/js/67.86b3baff.js"><link rel="prefetch" href="/assets/js/68.29b9fab5.js"><link rel="prefetch" href="/assets/js/69.aea273e4.js"><link rel="prefetch" href="/assets/js/7.0b10c3db.js"><link rel="prefetch" href="/assets/js/70.14482414.js"><link rel="prefetch" href="/assets/js/72.802f5fc2.js"><link rel="prefetch" href="/assets/js/73.1b02b75c.js"><link rel="prefetch" href="/assets/js/74.e5e1105e.js"><link rel="prefetch" href="/assets/js/75.a005acaf.js"><link rel="prefetch" href="/assets/js/76.d0a45c84.js"><link rel="prefetch" href="/assets/js/77.f58c2a23.js"><link rel="prefetch" href="/assets/js/78.cb51e0f7.js"><link rel="prefetch" href="/assets/js/79.4ce1a629.js"><link rel="prefetch" href="/assets/js/80.318927ea.js"><link rel="prefetch" href="/assets/js/81.b32882b3.js"><link rel="prefetch" href="/assets/js/82.da12ea28.js"><link rel="prefetch" href="/assets/js/83.d37bcd2b.js"><link rel="prefetch" href="/assets/js/84.c8296be2.js"><link rel="prefetch" href="/assets/js/85.21f72ba2.js"><link rel="prefetch" href="/assets/js/86.2ef9983c.js"><link rel="prefetch" href="/assets/js/87.a09638cb.js"><link rel="prefetch" href="/assets/js/88.df1154e8.js"><link rel="prefetch" href="/assets/js/89.faa49b1e.js"><link rel="prefetch" href="/assets/js/90.9d3b3002.js"><link rel="prefetch" href="/assets/js/91.c65648c6.js"><link rel="prefetch" href="/assets/js/92.421d4739.js"><link rel="prefetch" href="/assets/js/93.628bfb4c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d8b3a8c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f589b1fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Rr's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/js/作用域和this/闭包.html" class="sidebar-link">闭包</a></li><li><a href="/skill/js/作用域和this/原型链.html" class="sidebar-link">原型链</a></li><li><a href="/skill/js/作用域和this/JS执行上下文和执行栈.html" class="sidebar-link">JS执行上下文</a></li><li><a href="/skill/js/作用域和this/this详细解读.html" class="sidebar-link">this详细解读</a></li><li><a href="/skill/js/ES6/箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/skill/js/ES6/let和const.html" class="sidebar-link">let和const</a></li><li><a href="/skill/js/EventLoop/EventLoop.html" class="sidebar-link">Event Loop</a></li><li><a href="/skill/js/防抖和节流.html" class="sidebar-link">防抖和节流</a></li><li><a href="/skill/js/async/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/skill/js/页面加载.html" class="sidebar-link">页面加载</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js内置对象"><a href="#js内置对象" class="header-anchor">#</a> JS内置对象</h1> <p>什么是对象</p> <p>JavaScript 中的所有事物都是对象，如:字符串、数值、数组、函数等，每个对象带有属性和方法。</p> <p>对象的属性：反映该对象某些特定的性质的，如：字符串的长度、图像的长宽等；</p> <p>对象的方法：能够在对象上执行的动作。例如，表单的“提交”(Submit)，时间的“获取”(getYear)等；</p> <p>JavaScript 提供多个内建对象，比如 String、Date、Array 等等，使用对象前先定义，如下使用数组对象：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  var objectName =new Array();//使用new关键字定义对象
+或者
+  var objectName =[];
+访问对象属性的语法:
+objectName.propertyName
+如使用 Array 对象的 length 属性来获得数组的长度：
+var myarray=new Array(6);//定义数组对象
+var myl=myarray.length;//访问数组长度length属性
+以上代码执行后，myl的值将是：6
+访问对象的方法：
+objectName.methodName()
+如使用string 对象的 toUpperCase() 方法来将文本转换为大写：
+var mystr=&quot;Hello world!&quot;;//创建一个字符串
+var request=mystr.toUpperCase(); //使用字符串对象方法
+以上代码执行后，request的值是：HELLO WORLD!
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="date-日期对象"><a href="#date-日期对象" class="header-anchor">#</a> Date 日期对象</h2> <p>日期对象可以储存任意一个日期，并且可以精确到毫秒数（1/1000 秒）。</p> <p>定义一个时间对象 :</p> <p>var Udate=new Date();</p> <p>注意:使用关键字new，Date()的首字母必须大写。</p> <p>使 Udate 成为日期对象，并且已有初始值：当前时间(当前电脑系统时间)。</p> <p>如果要自定义初始值，可以用以下方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var d = new Date(2012, 10, 1);  //2012年10月1日
+var d = new Date('Oct 1, 2012'); //2012年10月1日
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>我们最好使用下面介绍的“方法”来严格定义时间。
+访问方法语法：“&lt;日期对象&gt;.&lt;方法&gt;”
+Date对象中处理时间和日期的常用方法：</p> <h2 id="返回-设置年份方法"><a href="#返回-设置年份方法" class="header-anchor">#</a> 返回/设置年份方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>get/setFullYear() 返回/设置年份，用四位数表示。
+var mydate=new Date();//当前时间2014年3月6日
+document.write(mydate+&quot;&lt;br&gt;&quot;);//输出当前时间
+document.write(mydate.getFullYear()+&quot;&lt;br&gt;&quot;);//输出当前年份
+mydate.setFullYear(81); //设置年份
+document.write(mydate+&quot;&lt;br&gt;&quot;); //输出年份被设定为 0081年。
+注意:不同浏览器， mydate.setFullYear(81)结果不同，年份被设定为 0081或81两种情况。
+结果:
+Thu Mar 06 2014 10:57:47 GMT+0800
+2014
+Thu Mar 06 0081 10:57:47 GMT+0800
+注意:
+1.结果格式依次为：星期、月、日、年、时、分、秒、时区。(火狐浏览器)
+2. 不同浏览器，时间格式有差异。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="返回星期方法"><a href="#返回星期方法" class="header-anchor">#</a> 返回星期方法</h2> <p>getDay() 返回星期，返回的是0-6的数字，0 表示星期天。如果要返回相对应“星期”，通过数组完成，代码如下:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var mydate=new Date();//定义日期对象
+  var weekday=[&quot;星期日&quot;,&quot;星期一&quot;,&quot;星期二&quot;,&quot;星期三&quot;,&quot;星期四&quot;,&quot;星期五&quot;,&quot;星期六&quot;];
+//定义数组对象,给每个数组项赋值
+  var mynum=mydate.getDay();//返回值存储在变量mynum中
+  document.write(mydate.getDay());//输出getDay()获取值
+  document.write(&quot;今天是：&quot;+ weekday[mynum]);//输出星期几
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>注意：以上代码是在2014年3月7日，星期五运行。</p> <p>结果:</p> <p>5</p> <p>今天是：星期五</p> <h2 id="返回-设置时间方法"><a href="#返回-设置时间方法" class="header-anchor">#</a> 返回/设置时间方法</h2> <p>get/setTime() 返回/设置时间，单位毫秒数，计算从 1970 年 1 月 1 日零时到日期对象所指的日期的毫秒数。</p> <p>如果将目前日期对象的时间推迟1小时，代码如下:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var mydate=new Date();
+  document.write(&quot;当前时间：&quot;+mydate+&quot;&lt;br&gt;&quot;);
+  mydate.setTime(mydate.getTime() + 60 * 60 * 1000);
+  document.write(&quot;推迟一小时时间：&quot; + mydate);
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>结果:</p> <p>当前时间：Thu Mar 6 11:46:27 UTC+0800 2014
+推迟一小时时间：Thu Mar 6 12:46:27 UTC+0800 2014
+注意:</p> <ol><li>一小时 60 分，一分 60 秒，一秒 1000 毫秒</li> <li>时间推迟 1 小时,就是: “x.setTime(x.getTime() + 60 * 60 * 1000);”</li></ol> <h2 id="string-字符串对象"><a href="#string-字符串对象" class="header-anchor">#</a> String 字符串对象</h2> <p>在之前的学习中已经使用字符串对象了，定义字符串的方法就是直接赋值。比如：
+var mystr = &quot;I love JavaScript!&quot;
+定义mystr字符串后，我们就可以访问它的属性和方法。
+访问字符串对象的属性length:
+stringObject.length; 返回该字符串的长度。
+var mystr=&quot;Hello World!&quot;;
+var myl=mystr.length;
+以上代码执行后，myl 的值将是：12
+访问字符串对象的方法：
+使用 String 对象的 toUpperCase() 方法来将字符串小写字母转换为大写：
+var mystr=&quot;Hello world!&quot;;
+var mynum=mystr.toUpperCase();
+以上代码执行后，mynum 的值是：HELLO WORLD!</p> <p>####返回指定位置的字符
+charAt() 方法可返回指定位置的字符。返回的字符是长度为 1 的字符串。
+语法:
+stringObject.charAt(index)
+参数说明：</p> <p>注意：1.字符串中第一个字符的下标是 0。最后一个字符的下标为字符串长度减一（string.length-1）。
+2.如果参数 index 不在 0 与 string.length-1 之间，该方法将返回一个空字符串。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>如:在字符串 &quot;I love JavaScript!&quot; 中，返回位置2的字符：
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var mystr=&quot;I love JavaScript!&quot;
+  document.write(mystr.charAt(2));
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意：一个空格也算一个字符。
+以上代码的运行结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>l
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="返回指定的字符串首次出现的位置"><a href="#返回指定的字符串首次出现的位置" class="header-anchor">#</a> 返回指定的字符串首次出现的位置</h2> <p>indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。
+语法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>stringObject.indexOf(substring, startpos)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>参数说明：</p> <p>说明：</p> <p>1.该方法将从头到尾地检索字符串 stringObject，看它是否含有子串 substring。</p> <p>2.可选参数，从stringObject的startpos位置开始查找substring，如果没有此参数将从stringObject的开始位置查找。</p> <p>3.如果找到一个 substring，则返回 substring 的第一次出现的位置。stringObject 中的字符位置是从 0 开始的。</p> <p>注意：1.indexOf() 方法区分大小写。</p> <p>2.如果要检索的字符串值没有出现，则该方法返回 -1。</p> <p>例如: 对 &quot;I love JavaScript!&quot; 字符串内进行不同的检索：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var str=&quot;I love JavaScript!&quot;
+  document.write(str.indexOf(&quot;I&quot;) + &quot;&lt;br /&gt;&quot;);
+  document.write(str.indexOf(&quot;v&quot;) + &quot;&lt;br /&gt;&quot;);
+  document.write(str.indexOf(&quot;v&quot;,8));
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>以上代码的输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>0
+4
+9
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="字符串分割split"><a href="#字符串分割split" class="header-anchor">#</a> 字符串分割split()</h2> <p>知识讲解：
+split() 方法将字符串分割为字符串数组，并返回此数组。
+语法：
+stringObject.split(separator,limit)
+参数说明:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>注意：如果把空字符串 (&quot;&quot;) 用作 separator，那么 stringObject 中的每个字符之间都会被分割。
+我们将按照不同的方式来分割字符串：
+使用指定符号分割字符串，代码如下:
+var mystr = &quot;www.imooc.com&quot;;
+document.write(mystr.split(&quot;.&quot;)+&quot;&lt;br&gt;&quot;);
+document.write(mystr.split(&quot;.&quot;, 2)+&quot;&lt;br&gt;&quot;);
+运行结果:
+www,imooc,com
+www,imooc
+将字符串分割为字符，代码如下：
+document.write(mystr.split(&quot;&quot;)+&quot;&lt;br&gt;&quot;);
+document.write(mystr.split(&quot;&quot;, 5));
+运行结果:
+w,w,w,.,i,m,o,o,c,.,c,o,m
+w,w,w,.,i
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="提取字符串substring"><a href="#提取字符串substring" class="header-anchor">#</a> 提取字符串substring()</h2> <p>substring() 方法用于提取字符串中介于两个指定下标之间的字符。
+语法:
+stringObject.substring(startPos,stopPos)
+参数说明:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>注意：
+1. 返回的内容是从 &lt;strong&gt;start开始(包含start位置的字符)到 stop-1 处的所有字符，其长度为 stop 减start。&lt;/strong&gt;
+2. 如果参数 start 与 stop 相等，那么该方法返回的就是一个空串（即长度为 0 的字符串）。
+3. 如果 start 比 stop 大，那么该方法在提取子串之前会先交换这两个参数。
+使用 substring() 从字符串中提取字符串，代码如下：
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var mystr=&quot;I love JavaScript&quot;;
+  document.write(mystr.substring(7));
+  document.write(mystr.substring(2,6));
+&lt;/script&gt;
+运行结果:
+JavaScript
+love
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="提取指定数目的字符substr"><a href="#提取指定数目的字符substr" class="header-anchor">#</a> 提取指定数目的字符substr()</h2> <p>substr() 方法从字符串中提取从 startPos位置开始的指定数目的字符串。
+语法:</p> <h3 id="stringobject-substr-startpos-length"><a href="#stringobject-substr-startpos-length" class="header-anchor">#</a> stringObject.substr(startPos,length)</h3> <p>参数说明:</p> <p>注意：如果参数startPos是负数，从字符串的尾部开始算起的位置。也就是说，-1 指字符串中最后一个字符，-2 指倒数第二个字符，以此类推。
+如果startPos为负数且绝对值大于字符串长度，startPos为0。
+使用 substr() 从字符串中提取一些字符，代码如下：
+<script type="text/javascript">
+var mystr=&amp;quot;I love JavaScript!&amp;quot;;
+document.write(mystr.substr(7));
+document.write(mystr.substr(2,4));
+</script>
+运行结果：
+JavaScript!
+love
+Math对象
+Math对象，提供对数据的数学计算。
+使用 Math 的属性和方法，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var mypi=Math.PI; 
+  var myabs=Math.abs(-15);
+  document.write(mypi);
+  document.write(myabs);
+&lt;/script&gt;
+运行结果:
+3.141592653589793
+15
+注意：Math 对象是一个固有的对象，无需创建它，直接把 Math 作为对象使用就可以调用其所有属性和方法。这是它与Date,String对象的区别。
+Math 对象属性
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="math-对象方法"><a href="#math-对象方法" class="header-anchor">#</a> Math 对象方法</h2> <p>以上方法不做全部讲解，只讲解部分方法。此节没有任务，快快进入下节学习。</p> <p>向上取整ceil()</p> <p>ceil() 方法可对一个数进行向上取整。</p> <p>语法:
+Math.ceil(x)
+参数说明:</p> <p>注意：它返回的是大于或等于x，并且与x最接近的整数。
+我们将把 ceil() 方法运用到不同的数字上，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  document.write(Math.ceil(0.8) + &quot;&lt;br /&gt;&quot;)
+  document.write(Math.ceil(6.3) + &quot;&lt;br /&gt;&quot;)
+  document.write(Math.ceil(5) + &quot;&lt;br /&gt;&quot;)
+  document.write(Math.ceil(3.5) + &quot;&lt;br /&gt;&quot;)
+  document.write(Math.ceil(-5.1) + &quot;&lt;br /&gt;&quot;)
+  document.write(Math.ceil(-5.9))
+&lt;/script&gt;
+
+运行结果：
+1
+7
+5
+4
+-5
+-5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="向下取整floor"><a href="#向下取整floor" class="header-anchor">#</a> 向下取整floor()</h2> <p>floor() 方法可对一个数进行向下取整。
+语法:
+Math.floor(x)
+参数说明：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>注意：返回的是小于或等于x，并且与 x 最接近的整数。
+我们将在不同的数字上使用 floor() 方法，代码如下:
+&lt;script type=&quot;text/javascript&quot;&gt;
+  document.write(Math.floor(0.8)+ &quot;&lt;br&gt;&quot;)
+  document.write(Math.floor(6.3)+ &quot;&lt;br&gt;&quot;)
+  document.write(Math.floor(5)+ &quot;&lt;br&gt;&quot;)
+  document.write(Math.floor(3.5)+ &quot;&lt;br&gt;&quot;)
+  document.write(Math.floor(-5.1)+ &quot;&lt;br&gt;&quot;)
+  document.write(Math.floor(-5.9))
+&lt;/script&gt;
+运行结果：
+0
+6
+5
+3
+-6
+-6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="四舍五入round"><a href="#四舍五入round" class="header-anchor">#</a> 四舍五入round()</h2> <p>round() 方法可把一个数字四舍五入为最接近的整数。
+语法:
+Math.round(x)
+参数说明：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>注意：
+1. 返回与 x 最接近的整数。
+2. 对于 0.5，该方法将进行上舍入。(5.5 将舍入为 6)
+3. 如果 x 与两侧整数同等接近，则结果接近 +∞方向的数字值 。(如 -5.5 将舍入为 -5; -5.52 将舍入为 -6),如下图:
+
+把不同的数舍入为最接近的整数,代码如下：
+&lt;script type=&quot;text/javascript&quot;&gt;
+ document.write(Math.round(1.6)+ &quot;&lt;br&gt;&quot;);
+ document.write(Math.round(2.5)+ &quot;&lt;br&gt;&quot;);
+ document.write(Math.round(0.49)+ &quot;&lt;br&gt;&quot;);
+ document.write(Math.round(-6.4)+ &quot;&lt;br&gt;&quot;);
+ document.write(Math.round(-6.6));
+&lt;/script&gt;
+运行结果：
+2
+3
+0
+-6
+-7
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="随机数-random"><a href="#随机数-random" class="header-anchor">#</a> 随机数 random()</h2> <p>random() 方法可返回介于 0 ~ 1（大于或等于 0 但小于 1 )之间的一个随机数。
+语法：
+Math.random();
+注意：返回一个大于或等于 0 但小于 1 的符号为正的数字值。
+我们取得介于 0 到 1 之间的一个随机数，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  document.write(Math.random());
+&lt;/script&gt;
+运行结果：
+0.190305486195328  
+注意:因为是随机数，所以每次运行结果不一样，但是0 ~ 1的数值。
+获得0 ~ 10之间的随机数，代码如下:
+&lt;script type=&quot;text/javascript&quot;&gt;
+  document.write((Math.random())*10);
+&lt;/script&gt;
+运行结果：
+8.72153625893887
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="array-数组对象"><a href="#array-数组对象" class="header-anchor">#</a> Array 数组对象</h2> <p>数组对象是一个对象的集合，里边的对象可以是不同类型的。数组的每一个成员对象都有一个“下标”，用来表示它在数组中的位置，是从零开始的
+数组定义的方法：</p> <ol><li>定义了一个空数组:
+var  数组名= new Array();</li> <li>定义时指定有n个空元素的数组：
+var 数组名 =new Array(n);
+3.定义数组的时候，直接初始化数据：
+var  数组名 = [&lt;元素1&gt;, &lt;元素2&gt;, &lt;元素3&gt;...];
+我们定义myArray数组，并赋值，代码如下：
+var myArray = [2, 8, 6];
+说明：定义了一个数组 myArray，里边的元素是：myArray[0] = 2; myArray[1] = 8; myArray[2] = 6。
+数组元素使用：
+数组名[下标] = 值;
+注意: 数组的下标用方括号括起来，从0开始。
+数组属性：
+length 用法：&lt;数组对象&gt;.length；返回：数组的长度，即数组里有多少个元素。它等于数组里最后一个元素的下标加一。
+数组方法：</li></ol> <p>以上方法不做全部讲解，只讲解部分方法。此节没有任务，快快进入下节学习。</p> <h2 id="数组连接concat"><a href="#数组连接concat" class="header-anchor">#</a> 数组连接concat()</h2> <p>concat() 方法用于连接两个或多个数组。此方法返回一个新数组，不改变原来的数组。
+语法
+arrayObject.concat(array1,array2,...,arrayN)
+参数说明：</p> <p>注意:  该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
+我们创建一个数组，将把 concat() 中的参数连接到数组 myarr 中，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var mya = new Array(3);
+  mya[0] = &quot;1&quot;;
+  mya[1] = &quot;2&quot;;
+  mya[2] = &quot;3&quot;;
+  document.write(mya.concat(4,5)+&quot;&lt;br&gt;&quot;);
+  document.write(mya); 
+&lt;/script&gt;
+运行结果：
+1,2,3,4,5
+1,2,3
+我们创建了三个数组，然后使用 concat() 把它们连接起来，代码如下：
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var mya1= new Array(&quot;hello!&quot;)
+  var mya2= new Array(&quot;I&quot;,&quot;love&quot;);
+  var mya3= new Array(&quot;JavaScript&quot;,&quot;!&quot;);
+  var mya4=mya1.concat(mya2,mya3);
+  document.write(mya4);
+&lt;/script&gt;
+运行结果：
+hello!,I,love,JavaScript,!
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="指定分隔符连接数组元素join"><a href="#指定分隔符连接数组元素join" class="header-anchor">#</a> 指定分隔符连接数组元素join()</h2> <p>join()方法用于把数组中的所有元素放入一个字符串。元素是通过指定的分隔符进行分隔的。
+语法：
+arrayObject.join(分隔符)
+参数说明:</p> <p>注意：返回一个字符串，该字符串把数组中的各个元素串起来，用&lt;分隔符&gt;置于元素与元素之间。这个方法不影响数组原本的内容。 我们使用join（）方法，将数组的所有元素放入一个字符串中，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var myarr = new Array(3);
+  myarr[0] = &quot;I&quot;;
+  myarr[1] = &quot;love&quot;;
+  myarr[2] = &quot;JavaScript&quot;;
+  document.write(myarr.join());
+&lt;/script&gt;
+运行结果：
+I,love,JavaScript
+我们将使用分隔符来分隔数组中的元素，代码如下：
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var myarr = new Array(3)
+  myarr[0] = &quot;I&quot;;
+  myarr[1] = &quot;love&quot;;
+  myarr[2] = &quot;JavaScript&quot;;
+  document.write(myarr.join(&quot;.&quot;));
+&lt;/script&gt;
+运行结果：
+I.love.JavaScript
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="颠倒数组元素顺序reverse"><a href="#颠倒数组元素顺序reverse" class="header-anchor">#</a> 颠倒数组元素顺序reverse()</h2> <p>reverse() 方法用于颠倒数组中元素的顺序。
+语法：
+arrayObject.reverse()
+注意：该方法会改变原来的数组，而不会创建新的数组。
+定义数组myarr并赋值，然后颠倒其元素的顺序：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var myarr = new Array(3)
+  myarr[0] = &quot;1&quot;
+  myarr[1] = &quot;2&quot;
+  myarr[2] = &quot;3&quot;
+  document.write(myarr + &quot;&lt;br /&gt;&quot;)
+  document.write(myarr.reverse())
+&lt;/script&gt;
+运行结果：
+1,2,3
+3,2,1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="选定元素slice"><a href="#选定元素slice" class="header-anchor">#</a> 选定元素slice()</h2> <p>slice() 方法可从已有的数组中返回选定的元素。
+语法
+arrayObject.slice(start,end)
+参数说明：</p> <p>1.返回一个新的数组，包含从 start 到 end （不包括该元素）的 arrayObject 中的元素。
+2. 该方法并不会修改数组，而是返回一个子数组。
+注意：</p> <ol><li>可使用负值从数组的尾部选取元素。
+2.如果 end 未被规定，那么 slice() 方法会选取从 start 到数组结尾的所有元素。</li> <li>String.slice() 与 Array.slice() 相似。
+我们将创建一个新数组，然后从其中选取的元素，代码如下：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var myarr = new Array(1,2,3,4,5,6);
+  document.write(myarr + &quot;&lt;br&gt;&quot;);
+  document.write(myarr.slice(2,4) + &quot;&lt;br&gt;&quot;);
+  document.write(myarr);
+&lt;/script&gt;
+运行结果：
+1,2,3,4,5,6
+3,4
+1,2,3,4,5,6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="数组排序sort"><a href="#数组排序sort" class="header-anchor">#</a> 数组排序sort()</h2> <p>sort()方法使数组中的元素按照一定的顺序排列。
+语法:
+arrayObject.sort(方法函数)
+参数说明：</p> <p>1.如果不指定&lt;方法函数&gt;，则按unicode码顺序排列。
+2.如果指定&lt;方法函数&gt;，则按&lt;方法函数&gt;所指定的排序方法排序。
+myArray.sort(sortMethod);
+注意: 该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：
+若返回值&lt;=-1，则表示 A 在排序后的序列中出现在 B 之前。
+若返回值&gt;-1 &amp;&amp; &lt;1，则表示 A 和 B 具有相同的排序顺序。
+若返回值&gt;=1，则表示 A 在排序后的序列中出现在 B 之后。
+1.使用sort()将数组进行排序，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  var myarr1 = new Array(&quot;Hello&quot;,&quot;John&quot;,&quot;love&quot;,&quot;JavaScript&quot;); 
+  var myarr2 = new Array(&quot;80&quot;,&quot;16&quot;,&quot;50&quot;,&quot;6&quot;,&quot;100&quot;,&quot;1&quot;);
+  document.write(myarr1.sort()+&quot;&lt;br&gt;&quot;);
+  document.write(myarr2.sort());
+&lt;/script&gt;
+运行结果：
+Hello,JavaScript,John,love
+1,100,16,50,6,80
+注意:上面的代码没有按照数值的大小对数字进行排序。
+2.如要实现这一点，就必须使用一个排序函数，代码如下：
+&lt;script type=&quot;text/javascript&quot;&gt;
+  function sortNum(a,b) {
+  return a - b;
+ //升序，如降序，把“a - b”该成“b - a”
+}
+ var myarr = new Array(&quot;80&quot;,&quot;16&quot;,&quot;50&quot;,&quot;6&quot;,&quot;100&quot;,&quot;1&quot;);
+  document.write(myarr + &quot;&lt;br&gt;&quot;);
+  document.write(myarr.sort(sortNum));
+&lt;/script&gt;
+运行结果：
+80,16,50,6,100,1
+1,6,16,50,80,100
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="实例"><a href="#实例" class="header-anchor">#</a> 实例：</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE  HTML&gt;
+&lt;html &gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;系好安全带,准备启航&lt;/title&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var mydate=new Date();
+    var weekday = [&quot;星期日&quot;, &quot;星期一&quot;, &quot;星期二&quot;, &quot;星期三&quot;, &quot;星期四&quot;, &quot;星期五&quot;, &quot;星期六&quot;];
+    document.write(mydate.getFullYear()+&quot;年&quot;+(mydate.getMonth()+1)+&quot;月&quot;+mydate.getDate()+&quot;日&quot;+&quot; &quot;+weekday[mydate.getDay()]);
+  //通过javascript的日期对象来得到当前的日期，并输出
+  
+  //成绩是一长窜的字符串不好处理，找规律后分割放到数组里更好操作哦
+  var scoreStr = &quot;小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76&quot;;
+ var scoreArry = scoreStr.split(&quot;;&quot;);
+ var sum = 0;
+ var avg = 0;
+ for(var i = 0;i &lt; scoreArry.length;i++){
+     sum = sum + parseInt(scoreArry[i].slice(3,5));
+ }
+ 
+ document.write(&quot;&lt;br&gt;&quot;+sum+&quot;&lt;br/&gt;&quot;);
+ var avg = sum/(scoreArry.length);
+ document.write(Math.round(avg));
+
+  //从数组中将成绩撮出来，然后求和取整，并输出
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.63e6572e.js" defer></script><script src="/assets/js/2.5853c661.js" defer></script><script src="/assets/js/1.e5f7b0b7.js" defer></script><script src="/assets/js/71.06593dc0.js" defer></script>
+  </body>
+</html>

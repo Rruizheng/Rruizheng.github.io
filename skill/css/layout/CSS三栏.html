@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS三栏自适应布局，左中右，上中下 | Rr&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f589b1fd.css" as="style"><link rel="preload" href="/assets/js/app.63e6572e.js" as="script"><link rel="preload" href="/assets/js/2.5853c661.js" as="script"><link rel="preload" href="/assets/js/1.e5f7b0b7.js" as="script"><link rel="preload" href="/assets/js/57.e5e57a35.js" as="script"><link rel="prefetch" href="/assets/js/10.4e15d136.js"><link rel="prefetch" href="/assets/js/11.36d5b72d.js"><link rel="prefetch" href="/assets/js/12.ce9d641c.js"><link rel="prefetch" href="/assets/js/13.f252ed01.js"><link rel="prefetch" href="/assets/js/14.0e4bb1db.js"><link rel="prefetch" href="/assets/js/15.611b4a46.js"><link rel="prefetch" href="/assets/js/16.7b6314c3.js"><link rel="prefetch" href="/assets/js/17.2de5fef7.js"><link rel="prefetch" href="/assets/js/18.8edb1f0c.js"><link rel="prefetch" href="/assets/js/19.0f686215.js"><link rel="prefetch" href="/assets/js/20.b723be56.js"><link rel="prefetch" href="/assets/js/21.f0730c6b.js"><link rel="prefetch" href="/assets/js/22.0e61f47d.js"><link rel="prefetch" href="/assets/js/23.a626f674.js"><link rel="prefetch" href="/assets/js/24.1eb131bc.js"><link rel="prefetch" href="/assets/js/25.a304b8c8.js"><link rel="prefetch" href="/assets/js/26.78ace1d6.js"><link rel="prefetch" href="/assets/js/27.e390597c.js"><link rel="prefetch" href="/assets/js/28.f74f60d6.js"><link rel="prefetch" href="/assets/js/29.2db0ceaa.js"><link rel="prefetch" href="/assets/js/3.27b60221.js"><link rel="prefetch" href="/assets/js/30.ab8c6391.js"><link rel="prefetch" href="/assets/js/31.fb08fe0c.js"><link rel="prefetch" href="/assets/js/32.88a2dec6.js"><link rel="prefetch" href="/assets/js/33.a215c628.js"><link rel="prefetch" href="/assets/js/34.f7dcdc40.js"><link rel="prefetch" href="/assets/js/35.2c79727f.js"><link rel="prefetch" href="/assets/js/36.320c4085.js"><link rel="prefetch" href="/assets/js/37.ef0e6a38.js"><link rel="prefetch" href="/assets/js/38.425ff37c.js"><link rel="prefetch" href="/assets/js/39.fb2d1ec3.js"><link rel="prefetch" href="/assets/js/4.a2dcb89c.js"><link rel="prefetch" href="/assets/js/40.73dd4d6c.js"><link rel="prefetch" href="/assets/js/41.a82aa888.js"><link rel="prefetch" href="/assets/js/42.1356c985.js"><link rel="prefetch" href="/assets/js/43.a2da7d19.js"><link rel="prefetch" href="/assets/js/44.4b390834.js"><link rel="prefetch" href="/assets/js/45.de05d68c.js"><link rel="prefetch" href="/assets/js/46.858bcc53.js"><link rel="prefetch" href="/assets/js/47.e9bdfdd4.js"><link rel="prefetch" href="/assets/js/48.fcd51222.js"><link rel="prefetch" href="/assets/js/49.c8f68d9c.js"><link rel="prefetch" href="/assets/js/5.c7463708.js"><link rel="prefetch" href="/assets/js/50.3a90bdf2.js"><link rel="prefetch" href="/assets/js/51.f0659f9f.js"><link rel="prefetch" href="/assets/js/52.d7b62681.js"><link rel="prefetch" href="/assets/js/53.3b108e72.js"><link rel="prefetch" href="/assets/js/54.5a3e5a59.js"><link rel="prefetch" href="/assets/js/55.7d06b7d6.js"><link rel="prefetch" href="/assets/js/56.65aa266d.js"><link rel="prefetch" href="/assets/js/58.bfd523d9.js"><link rel="prefetch" href="/assets/js/59.a8d998eb.js"><link rel="prefetch" href="/assets/js/6.00ce6dd1.js"><link rel="prefetch" href="/assets/js/60.437165cf.js"><link rel="prefetch" href="/assets/js/61.f326ef58.js"><link rel="prefetch" href="/assets/js/62.38f3a4df.js"><link rel="prefetch" href="/assets/js/63.6bb8eadf.js"><link rel="prefetch" href="/assets/js/64.6665a418.js"><link rel="prefetch" href="/assets/js/65.95efdd65.js"><link rel="prefetch" href="/assets/js/66.813cbf1d.js"><link rel="prefetch" href="/assets/js/67.86b3baff.js"><link rel="prefetch" href="/assets/js/68.29b9fab5.js"><link rel="prefetch" href="/assets/js/69.aea273e4.js"><link rel="prefetch" href="/assets/js/7.0b10c3db.js"><link rel="prefetch" href="/assets/js/70.14482414.js"><link rel="prefetch" href="/assets/js/71.06593dc0.js"><link rel="prefetch" href="/assets/js/72.802f5fc2.js"><link rel="prefetch" href="/assets/js/73.1b02b75c.js"><link rel="prefetch" href="/assets/js/74.e5e1105e.js"><link rel="prefetch" href="/assets/js/75.a005acaf.js"><link rel="prefetch" href="/assets/js/76.d0a45c84.js"><link rel="prefetch" href="/assets/js/77.f58c2a23.js"><link rel="prefetch" href="/assets/js/78.cb51e0f7.js"><link rel="prefetch" href="/assets/js/79.4ce1a629.js"><link rel="prefetch" href="/assets/js/80.318927ea.js"><link rel="prefetch" href="/assets/js/81.b32882b3.js"><link rel="prefetch" href="/assets/js/82.da12ea28.js"><link rel="prefetch" href="/assets/js/83.d37bcd2b.js"><link rel="prefetch" href="/assets/js/84.c8296be2.js"><link rel="prefetch" href="/assets/js/85.21f72ba2.js"><link rel="prefetch" href="/assets/js/86.2ef9983c.js"><link rel="prefetch" href="/assets/js/87.a09638cb.js"><link rel="prefetch" href="/assets/js/88.df1154e8.js"><link rel="prefetch" href="/assets/js/89.faa49b1e.js"><link rel="prefetch" href="/assets/js/90.9d3b3002.js"><link rel="prefetch" href="/assets/js/91.c65648c6.js"><link rel="prefetch" href="/assets/js/92.421d4739.js"><link rel="prefetch" href="/assets/js/93.628bfb4c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d8b3a8c6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f589b1fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Rr's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link router-link-active">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  总览
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/skill/css/" class="nav-link router-link-active">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/skill/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link">
+  Web
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/skill/nodejs/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/notes/" class="nav-link">
+  项目笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工程规范
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/business/standard/common.html" class="nav-link">
+  通用规范
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/project/build/babel/" class="nav-link">
+  babel
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/tools/" class="nav-link">
+  实用工具
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS加载</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/css/load/" class="sidebar-link">css加载会造成阻塞吗</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>字体</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/css/font/color-trans.html" class="sidebar-link">透明色转换</a></li><li><a href="/skill/css/font/fontsize.html" class="sidebar-link">字体大小</a></li><li><a href="/skill/css/font/CSS中的字体与排版.html" class="sidebar-link">CSS中的字体与排版</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>布局</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/css/layout/CSS布局模型.html" class="sidebar-link">CSS布局模型</a></li><li><a href="/skill/css/layout/CSS三栏.html" class="active sidebar-link">CSS三栏自适应布局，左中右，上中下</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>变换</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/css/view/icon-color.html" class="sidebar-link">图标着色</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>读书笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css三栏自适应布局-左中右-上中下"><a href="#css三栏自适应布局-左中右-上中下" class="header-anchor">#</a> CSS三栏自适应布局，左中右，上中下</h1> <blockquote><p>本文对可以实现三栏布局的方法进行了整理</p></blockquote> <h3 id="左右固定宽度-中间自适应-5种方法"><a href="#左右固定宽度-中间自适应-5种方法" class="header-anchor">#</a> 左右固定宽度，中间自适应(5种方法)</h3> <p>1.float方法
+2.absolute方法
+3.flexbox方法
+4.table方法
+5.grid方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;css布局全解&lt;/title&gt;
+	&lt;style type=&quot;text/css&quot;&gt;
+		html *{
+			padding: 0;
+			margin: 0
+		}
+		.layout article div{
+			min-height: 50px;
+		}
+
+		.layout{
+			margin-top: 10px;
+		}
+
+
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- 1.float 方法--&gt;
+	&lt;section class=&quot;layout float&quot;&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+			.layout.float .right{
+				float: right;
+				width: 300px;
+				background: red;
+			}
+			.layout.float .left{
+				float: left;
+				width: 300px;
+				background: blue;
+			}
+			.layout.float .center{
+				background: yellow;
+			}
+		&lt;/style&gt;
+		&lt;article class=&quot;left-right-center&quot;&gt;
+			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;center&quot;&gt;
+				&lt;h1&gt;浮动解决方案&lt;/h1&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+
+	&lt;!-- 2.绝对定位写法 --&gt;
+	&lt;section class=&quot;layout absolute&quot;&gt;
+		&lt;style&gt;
+			.layout.absolute .left-center-right div{
+				position: absolute;
+			}
+			.layout.absolute .left{
+				width: 300px;
+				left: 0;
+				background: blue;
+			}
+			.layout.absolute .center{
+				left: 300px;
+				right: 300px;
+				background: yellow;
+			}
+			.layout.absolute .right{
+				width: 300px;
+				right: 0px;
+				background: red;
+			}
+			
+			
+		&lt;/style&gt;
+		&lt;article class=&quot;left-center-right&quot;&gt;
+			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;center&quot;&gt;
+				&lt;h1&gt;绝对定位解决方案&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+
+	&lt;!-- 3.flex布局 --&gt;
+	&lt;section class=&quot;layout flexbox&quot;&gt;
+		&lt;style&gt;
+			.layout.flexbox{
+				margin-top: 70px;
+			}
+			.layout.flexbox .left-center-right{
+				display: flex;
+			}
+			.layout.flexbox .left{
+				width: 300px;
+				background: blue;
+			}
+			.layout.flexbox .center{
+				flex:1;
+				background: yellow;
+			}
+			.layout.flexbox .right{
+				width: 300px;
+				background: red;
+			}
+		&lt;/style&gt;
+		&lt;article class=&quot;left-center-right&quot;&gt;
+			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;center&quot;&gt;
+				&lt;h1&gt;flex定位解决方案&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+
+	&lt;!-- 4.表格布局 --&gt;
+	&lt;section class=&quot;layout table&quot;&gt;
+		&lt;style&gt;
+			.layout.table .left-center-right{
+				display: table;
+				width: 100%;
+				height: 50px;
+			}
+			.layout.table .left-center-right div{
+				display: table-cell;
+			}
+			.layout.table .left{
+				width: 300px;
+				background: blue;
+			}
+			.layout.table .center{
+				background: yellow;
+			}
+			.layout.table .right{
+				width: 300px;
+				background: red;
+			}
+		&lt;/style&gt;
+		&lt;article class=&quot;left-center-right&quot;&gt;
+			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;center&quot;&gt;
+				&lt;h1&gt;表格定位解决方案&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+
+	&lt;!--5.网格布局 --&gt;
+	&lt;section class=&quot;layout grid&quot;&gt;
+		&lt;style&gt;
+			.layout.grid .left-center-right{
+				display: grid;
+				width: 100%;
+				grid-template-rows: 50px;
+				grid-template-columns: 300px auto 300px;
+			}
+			.layout.grid .left{
+				background: blue;
+			}
+			.layout.grid .center{
+				background: yellow;
+			}
+			.layout.grid .right{
+				background: red;
+			}
+		&lt;/style&gt;
+		&lt;article class=&quot;left-center-right&quot;&gt;
+			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;center&quot;&gt;
+				&lt;h1&gt;网格定位解决方案&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br></div></div><h3 id="上下固定高度-中间自适应-4种方法"><a href="#上下固定高度-中间自适应-4种方法" class="header-anchor">#</a> 上下固定高度，中间自适应(4种方法)</h3> <p>1.absolute方法
+2.flexbox方法
+3.table方法
+4.grid方法</p> <p><img src="http://upload-images.jianshu.io/upload_images/4648896-ff5ef226341d7158.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;css上下高度不变，中间自适应布局&lt;/title&gt;
+	&lt;style type=&quot;text/css&quot;&gt;
+		html *{
+			padding: 0;
+			margin: 0;
+		}
+		#wrapper div{
+			width: 150px;
+		}
+		#wrapper div.one,.two,.three,.four{
+			width: 150px;
+			height: 100%;
+			display: inline-block;
+			float: left;
+		}
+		.one,.two,.three{
+			background: green;
+		}
+		
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id=&quot;wrapper&quot;&gt;
+		&lt;!-- 1.absolute方法 --&gt;
+		&lt;div class=&quot;one&quot;&gt;
+			&lt;style type=&quot;text/css&quot;&gt;
+				.layout.absolute div{
+					position: absolute;
+					float: left;
+				}
+				.layout.absolute .top{
+					top: 0;
+					height: 100px;
+					background: red;
+				}
+				.layout.absolute .bottom{
+					bottom: 0;
+					height: 100px;
+					background: blue;
+					float: left;
+				}
+				.layout.absolute .center{
+					top: 100px;
+					bottom: 100px;
+					background: yellow;
+					overflow: auto;
+				}
+
+			&lt;/style&gt;
+			&lt;article class=&quot;layout absolute&quot;&gt;
+				&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;center&quot;&gt;
+					&lt;h1&gt;absolute中间自适应元素&lt;/h1&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+			&lt;/article&gt; 
+		&lt;/div&gt;
+
+		&lt;!-- 2.flex方法 --&gt;
+		&lt;div class=&quot;two&quot;&gt;
+			
+			&lt;style type=&quot;text/css&quot;&gt;
+				.two{
+					margin-left:10px;
+				}
+				.layout.flexbox{
+					display: flex;
+					width: 100%;
+					height: 100%;
+					flex-direction:column;
+				}
+				.layout.flexbox .top{
+					height: 100px;						
+					background: red;
+				}
+				.layout.flexbox .center{
+					flex:1;
+					background: yellow;
+				}
+				.layout.flexbox .bottom{
+					height: 100px;
+					background: blue;
+				}
+			&lt;/style&gt;
+			&lt;article class=&quot;layout flexbox&quot;&gt;
+				&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;center&quot;&gt;
+					&lt;h1&gt;flexbox中间自适应元素&lt;/h1&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+			&lt;/article&gt; 
+		&lt;/div&gt;
+
+		&lt;!-- 3.表格方法 --&gt;
+		&lt;div class=&quot;three&quot;&gt;
+			&lt;style type=&quot;text/css&quot;&gt;
+					.three{
+						margin-left: 10px;
+					}
+					.layout.table{
+						display: table;
+						height: 100%;
+						width: 100%;
+					}
+					.layout.table div{
+						display: table-row;
+						/*特别注意*/
+						display: inline-block; 
+					}
+					.layout.table .top{
+						height: 100px;			
+						background: red;
+					}
+					.layout.table .center{
+						height:calc(100% - 200px);
+						background: yellow;
+					}
+					.layout.table .bottom{
+						height: 100px;
+						background: blue;
+					}
+				&lt;/style&gt;
+				&lt;article class=&quot;layout table&quot;&gt;
+					&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;center&quot;&gt;
+						&lt;h1&gt;table方法中间自适应元素&lt;/h1&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+				&lt;/article&gt;
+		&lt;/div&gt;
+		
+		&lt;!-- 4.grid方法 --&gt;      
+		&lt;div class=&quot;four&quot;&gt;
+			&lt;style&gt;
+				.four{
+					margin-left: 10px;
+				}
+				.layout.grid{
+					display: grid;
+					height: 100%;
+					grid-template-rows: 100px auto 100px;
+					grid-template-columns: 150px;
+				}
+				.layout.grid .top{			
+					background: red;
+				}
+				.layout.grid .center{
+					background: yellow;
+				}
+				.layout.grid .bottom{
+					background: blue;
+				}
+			&lt;/style&gt;
+			&lt;article class=&quot;layout grid&quot;&gt;
+				&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;center&quot;&gt;
+					&lt;h1&gt;grid方法中间自适应元素&lt;/h1&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+			&lt;/article&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br></div></div><p>看似简单的题目，还是要多练习增加熟练度。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/css/layout/CSS布局模型.html" class="prev">
+        CSS布局模型
+      </a></span> <span class="next"><a href="/skill/css/view/icon-color.html">
+        图标着色
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.63e6572e.js" defer></script><script src="/assets/js/2.5853c661.js" defer></script><script src="/assets/js/1.e5f7b0b7.js" defer></script><script src="/assets/js/57.e5e57a35.js" defer></script>
+  </body>
+</html>
